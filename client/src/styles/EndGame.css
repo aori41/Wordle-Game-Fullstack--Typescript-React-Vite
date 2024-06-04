@@ -20,11 +20,12 @@
 .title {
 	color: #5f61ff;
 	border: none;
+	width: 100%;
 }
 
-/* .subtitle {
-	color: #6c6c6c;
-} */
+.subtitle {
+	width: 100%;
+}
 
 .subtitle.win {
 	color: darkgreen;
@@ -85,5 +86,16 @@
 	to {
 		opacity: 1;
 		transform: translate(-50%, -50%);
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.end-game {
+		width: 60%;
+		height: 50%;
+	}
+
+	.end-game>h3 {
+		font-size: 4vw;
 	}
 }
